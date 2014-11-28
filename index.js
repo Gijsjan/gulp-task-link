@@ -31,8 +31,8 @@ module.exports = function(gulp, modules) {
     linkModules = function(cb) {
       var moduleCommands;
       moduleCommands = modules.map(function(module) {
-        "npm link " + module;
-        return util.log("Linked: " + module);
+        util.log("Linked: " + module);
+        return "npm link " + module;
       });
       return async.each(moduleCommands, exec, function(err) {
         return cb();
@@ -50,8 +50,8 @@ module.exports = function(gulp, modules) {
     unlinkModules = function(cb) {
       var moduleCommands;
       moduleCommands = modules.map(function(module) {
-        "npm unlink " + module;
-        return util.log("Unlinked: " + module);
+        util.log("Unlinked: " + module);
+        return "npm unlink " + module;
       });
       return async.each(moduleCommands, exec, function(err) {
         return cb();

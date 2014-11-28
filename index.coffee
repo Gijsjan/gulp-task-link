@@ -16,8 +16,8 @@ module.exports = (gulp, modules) ->
 
 		linkModules = (cb) ->
 			moduleCommands = modules.map (module) -> 
-				"npm link #{module}"
 				util.log "Linked: #{module}"
+				"npm link #{module}"
 			async.each moduleCommands, exec, (err) -> cb()
 
 		async.series [removeModules, linkModules], (err) ->
@@ -27,8 +27,8 @@ module.exports = (gulp, modules) ->
 	gulp.task 'unlink', (done) ->
 		unlinkModules = (cb) ->
 			moduleCommands = modules.map (module) -> 
-				"npm unlink #{module}"
 				util.log "Unlinked: #{module}"
+				"npm unlink #{module}"
 			async.each moduleCommands, exec, (err) -> cb()
 
 		installModules = (cb) ->
