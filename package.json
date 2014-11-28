@@ -1,0 +1,30 @@
+{
+  "name": "gulp-task-link",
+  "version": "1.0.0",
+  "description": "Gulp tasks for npm linking and unlinking local modules.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Gijsjan/gulp-task-link"
+  },
+  "keywords": [
+    "gulp",
+    "task",
+    "npm",
+    "link"
+  ],
+  "author": "gijsjan.brouwer@huygens.knaw.nl (https://github.com/Gijsjan)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gijsjan/gulp-task-link/issues"
+  },
+  "homepage": "https://github.com/Gijsjan/gulp-task-link",
+  "devDependencies": {
+    "async": "^0.9.0",
+    "gulp-util": "^3.0.1",
+    "rimraf": "^2.2.8"
+  }
+}
